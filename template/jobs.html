@@ -1,0 +1,126 @@
+{% extends "index.html" %}
+{% load static %}
+  
+   {% block content %}
+<!-- Job Portals Section -->
+<div id="main_job">
+
+    <section class="text-center" id="head_job">
+		<h1>Job Apply</h1>
+		<p>Lets Work with Dynamic Developers</p>
+	</section>
+
+
+<!-- apply for job -->
+
+<section>
+
+    <div class="text-center" style="margin-top: 60px;">
+        <form enctype="multipart/form-data" method="POST" autocomplete="off" style="width: 500px; margin-left:35%">
+            {% load crispy_forms_tags %}
+            {% csrf_token %}
+            {{ form1 | crispy }}  
+           <a href="#job-button"> <input type="submit" class="btn btn-primary btn-block" value ="upload" id="job-button"></a>
+        </form>
+        </div> 
+
+        <div id="message">
+            {% if messages %}
+                {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}">
+                    {{ message }}
+                </div>
+                {% endfor %}
+            {% endif %}
+            </div>
+
+</section>
+
+<script>
+    setTimeout(function() {
+        var messageContainer = document.getElementById('#message'); 
+        if (messageContainer) {
+            messageContainer.style.display = 'none';
+        }
+    }, 5000);
+</script>
+<!-- social meadia links -->
+
+<section class="job-portals" id="job-portals">
+    <div class="container" id="jobb">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 style="margin-top: 40px; margin-bottom:30px">Job Portals</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="job-portal-box">
+                    <img src="{% static 'image/indeed.png' %}" alt="Indeed Logo" class="job-portal-logo">
+                    <h3>Indeed</h3>
+                    <p>Find your next job from millions of job listings on Indeed.</p>
+                    <a href="https://www.indeed.com" target="_blank" class="btn btn-primary">Visit Site</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="job-portal-box">
+                    <img src="{% static 'image/linkedin.png' %}" alt="LinkedIn Logo" class="job-portal-logo">
+                    <h3>LinkedIn</h3>
+                    <p>Grow your career and business with LinkedIn. Find the right job or talent for your business.</p>
+                    <a href="https://www.linkedin.com/jobs/" target="_blank" class="btn btn-primary">Visit Site</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="job-portal-box">
+                    <img src="{% static 'image/glassdoor.jpeg' %}" alt="Glassdoor Logo" class="job-portal-logo">
+                    <h3>Glassdoor</h3>
+                    <p>Search millions of jobs and get the inside scoop on companies with employee reviews, personalized salary tools, and more.</p>
+                    <a href="https://www.glassdoor.com/index.htm" target="_blank" class="btn btn-primary">Visit Site</a>
+                </div>
+            </div>
+        </div>
+    </div>
+ </section>
+
+
+
+ <!-- footer section -->
+<section id="footer">
+    <div>
+        <footer>
+            <div class="footer">
+            <div class="row">
+                <ul>    
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="https://twitter.com/?lang=en-in"><i class="fa fa-twitter"></i></a></li>
+                   </ul>
+            </div>
+            
+            <div class="row">
+            <ul >
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Career</a></li>
+            </ul>
+            </div>
+            
+            <div class="text-center" >
+            INFERNO Copyright © 2021 Inferno - All rights reserved || Designed By: Krishna 
+            </div>
+            </div>
+            </footer>
+            
+    </div>
+    
+    </section>
+ 
+</div>
+
+
+
+
+   {% endblock %}

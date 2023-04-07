@@ -1,0 +1,125 @@
+{% extends "index.html" %}
+{% load static %}
+  
+   {% block content %}
+   <div id="main_contact">
+<section id="contact" class="contact">
+
+    <div class="container" data-aos="fade-up" style="margin-bottom: 40px;">
+
+      <header class="section-header">
+        <h2>Contact</h2>
+              </header>
+
+      <div class="row gy-4">
+
+        <div class="col-lg-6">
+
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <div class="info-box">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Address</h4>
+                <p>34(1) Karaikudi<br>Tmail Nadu, pin 630107</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-box">
+                <i class="bi bi-telephone"></i>
+                <h4>Call Us</h4>
+                <p>91+ 9952111559<br>91+ 8248604246</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-box">
+                <i class="bi bi-envelope"></i>
+                <h4>Email Us</h4>
+                <p>dynamic@gmail.com<br>dynamicdev@gmail.com</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-box">
+                <i class="bi bi-clock"></i>
+                <h4>Open Hours</h4>
+                <p>Monday - Friday<br>9:00AM - 05:00PM</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+          <div class="col-md-4" >
+            {% load crispy_forms_tags %}			
+                      <form method="POST" autocomplete="off" style="margin-left: 20px; width:600px">
+                          {% csrf_token %}
+                          {{ form2 | crispy }}
+                          <a href="#submit">
+                          <input type="submit" class="btn btn-primary btn-block" value="submit" id="submit">
+                          </a>
+                      </form>
+              </div>
+        </div>
+        
+        <div id="message">
+          {% if messages %}
+              {% for message in messages %}
+              <div class="alert alert-{{ message.tags }}">
+                  {{ message }}
+              </div>
+              {% endfor %}
+          {% endif %}
+          </div>
+
+      </div>
+
+    </div>
+
+    <script>
+      setTimeout(function() {
+          var messageContainer = document.getElementById('message'); 
+          if (messageContainer) {
+              messageContainer.style.display = 'none';
+          }
+      }, 5000);
+  </script>
+
+  </section><!-- End Contact Section -->
+
+  <!-- footer section -->
+
+  <section id="footer">
+    <div>
+        <footer>
+            <div class="footer">
+            <div class="row">
+            <ul>    
+            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="https://twitter.com/?lang=en-in"><i class="fa fa-twitter"></i></a></li>
+           </ul>
+            </div>
+            
+            <div class="row">
+            <ul >
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Career</a></li>
+            </ul>
+            </div>
+            
+            <div class="text-center" >
+            INFERNO Copyright © 2021 Inferno - All rights reserved || Designed By: Krishna 
+            </div>
+            </div>
+            </footer>
+            
+    </div>
+    
+    </section>
+</div>
+
+  {% endblock %}

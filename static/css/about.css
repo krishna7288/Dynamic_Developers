@@ -1,0 +1,25 @@
+#main_about{
+    border: 1px solid black;
+    background-color: F4D9E7;
+    padding-top: 50px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+  }
+
+.about {
+    padding: 50px 0;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+.about p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.about img {
+    margin-top: 20px;
+}

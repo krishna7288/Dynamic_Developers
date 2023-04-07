@@ -1,0 +1,57 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block content %}
+<div id="main_about" >
+<!-- About Section -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>About Dynamic Developers</h2>
+                <p>Dynamic Developers is a software development company based in Anytown, USA. We specialize in web and mobile application development, and we have a team of experienced developers who are passionate about building innovative solutions for our clients.</p>
+                <p>Our mission is to provide high-quality software development services that help our clients achieve their business goals. We work closely with our clients to understand their needs and requirements, and we use the latest technologies and development methodologies to deliver robust, scalable, and secure solutions.</p>
+                <p>At Dynamic Developers, we believe in building long-term relationships with our clients based on trust, transparency, and mutual respect. We are committed to delivering exceptional customer service and support, and we strive to exceed our clients' expectations at every step of the development process.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'image/aboutpage.webp' %}" alt="About Us Image" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="footer">
+    <div>
+        <footer>
+            <div class="footer">
+            <div class="row">
+            <ul>    
+            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="https://twitter.com/?lang=en-in"><i class="fa fa-twitter"></i></a></li>
+           </ul>
+            </div>
+            
+            <div class="row">
+            <ul >
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Career</a></li>
+            </ul>
+            </div>
+            
+            <div class="text-center" >
+            INFERNO Copyright © 2021 Inferno - All rights reserved || Designed By: Krishna 
+            </div>
+            </div>
+            </footer>
+            
+    </div>
+    
+    </section>
+</div>
+
+{% endblock %}

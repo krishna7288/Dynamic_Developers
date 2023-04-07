@@ -1,0 +1,20 @@
+{% include "header.html" %}	
+{% include "nav.html" %}
+{% include "title.html" %}
+
+
+
+    {% block content %}
+
+    <title>Dynamic Developers</title>
+	
+	{% endblock %}
+
+    <script>
+        setTimeout(function() {
+            var messageContainer = document.getElementById('#message'); 
+            if (messageContainer) {
+                messageContainer.style.display = 'none';
+            }
+        }, 5000);
+    </script>

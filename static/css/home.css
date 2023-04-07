@@ -1,0 +1,276 @@
+#head{
+    
+    background-color: #f8f9fa;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    text-align: center;
+
+  
+}
+body{
+margin-right: 5px;
+background-color: black;
+}
+
+.main{
+border: 1px solid black;
+background-color: F0EEED;
+padding-top: 50px;
+padding-right: 0px;
+padding-bottom: 50px;
+padding-left: 0px;
+}
+
+#services{
+background-color:ECF2FF;
+padding: 10px;
+margin-top: 40px;
+margin-bottom: 2rem;
+border-radius: 0.3rem;
+box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+text-align: center;
+}
+
+
+.card:hover{
+transform: translateY(-10px);
+}
+
+h3 {
+    color: hsl(0, 0%, 28%);
+    font-size: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 64px;
+    background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+  }
+  
+
+@keyframes shine {
+0% {
+  background-position: 0;
+}
+60% {
+  background-position: 600px;
+}
+100% {
+  background-position: 600px;
+}
+}
+
+
+.founder-ceo {
+padding: 100px 0;
+text-align: center;
+}
+
+.founder-ceo h2 {
+margin-bottom: 50px;
+}
+
+.founder-ceo img {
+border-radius: 50%;
+margin-bottom: 20px;
+width: 200px;
+height: 200px;
+object-fit: cover;
+}
+
+.founder-ceo h3 {
+margin-bottom: 10px;
+}
+
+.founder-ceo h4 {
+color: #777;
+margin-bottom: 20px;
+}
+
+.founder-ceo p {
+margin-bottom: 20px;
+line-height: 1.5;
+}
+
+
+.employee-list {
+
+background-color: ECF2FF;
+padding: 10px;
+margin-top: 40px;
+margin-bottom: 2rem;
+margin-left: 50px;
+
+margin-right: 50px;
+border-radius: 0.3rem;
+box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+text-align: center;
+}
+
+.employee-list h2 {
+margin-bottom: 50px;
+}
+
+.employee-card {
+background-color: #fff;
+border-radius: 5px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+padding: 20px;
+text-align: center;
+margin-bottom: 70px;
+margin-top: 40px;
+transition: transform 0.3s ease-in-out;
+}
+
+.employee-card:hover {
+transform: translateY(-10px);
+}
+
+.employee-card img {
+border-radius: 50%;
+margin-bottom: 20px;
+}
+
+.employee-card h3 {
+margin-bottom: 10px;
+}
+
+.employee-card p {
+color: #777;
+}
+
+
+.contact {
+
+background-color: ECF2FF;
+padding: 10px;
+margin-top: 40px;
+margin-bottom: 2rem;
+margin-left: 20px;
+margin-right: 20px;
+border-radius: 0.3rem;
+box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+text-align: center;
+
+}
+
+.contact h2 {
+margin-bottom: 50px;
+}
+
+.contact ul {
+list-style: none;
+padding: 0;
+}
+
+.contact ul li {
+margin-bottom: 10px;
+}
+
+.contact form {
+background-color: #fff;
+padding: 30px;
+}
+
+.contact form label {
+font-weight: 600;
+}
+
+.contact form input,
+.contact form textarea {
+margin-bottom: 20px;
+}
+.employee-group {
+background-color: F0EEED;
+padding: 100px 0;
+text-align: center;
+}
+
+.employee-group h2 {
+margin-bottom: 50px;
+}
+
+.employee-group img {
+border-radius: 50%;
+margin: 20px;
+width: 200px;
+height: 200px;
+object-fit: cover;
+}
+li{
+margin-right: 10;
+}
+
+#footer{
+
+margin-left: 20px;
+margin-right: 20px;
+border-radius: 0.3rem;
+box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+text-align: center;
+}
+
+.footer{
+background-color: lightblue;
+padding:30px 0px;
+font-family: 'Play', sans-serif;
+text-align:center;
+}
+
+.footer .row{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:gray;
+font-size:0.8em;
+}
+
+.footer .row a{
+text-decoration:none;
+color:gray;
+transition:0.5s;
+}
+
+.footer .row a:hover{
+color:#fff;
+}
+
+.footer .row ul{
+width:100%;
+}
+
+.footer .row ul li{
+display:inline-block;
+margin:0px 30px;
+}
+
+.footer .row a i{
+font-size:2em;
+margin:0% 1%;
+}
+
+@media (max-width:720px){
+.footer{
+text-align:left;
+padding:5%;
+}
+.footer .row ul li{
+display:block;
+margin:10px 0px;
+text-align:left;
+}
+.footer .row a i{
+margin:0% 3%;
+}
+}
+
+.row{
+margin-left: 20px;
+}    
+
